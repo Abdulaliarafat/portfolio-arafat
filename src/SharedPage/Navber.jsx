@@ -31,7 +31,7 @@ const Navbar = () => {
         Projects
       </NavLink>
       <NavLink
-        to="/contact"
+        to="/detailsContact"
         className={({ isActive }) =>
           isActive
             ? 'bg-gradient-to-r from-cyan-700 to-purple-700 hover:brightness-110 transition text-white px-4 py-2 rounded-md font-semibold shadow block'

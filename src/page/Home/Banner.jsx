@@ -43,7 +43,7 @@ const Banner = () => {
                         <FaDownload /> Download Resume
                     </a>
                     <Link
-                        to="/projects"
+                        to="/projectDetails"
                         className="px-5 py-2 border border-cyan-400 hover:bg-cyan-700 rounded-md transition"
                     >
                         View Projects

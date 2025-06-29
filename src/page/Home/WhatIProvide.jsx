@@ -49,7 +49,7 @@ const WhatIProvide = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-100">What I Provide</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-blue-500">What I Provide</h2>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
@@ -63,7 +63,7 @@ const WhatIProvide = () => {
                             viewport={{ once: true }}
                             variants={fadeIn}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className={`rounded-lg border-1 ${service.borderColor} ${service.bgColor} p-6 shadow-sm hover:shadow-md transition-shadow duration-300 bg-gradient-to-r from-purple-900 via-purple-800 to-purple-800 text-white mt-9`}
+                            className={`rounded-lg border-1 ${service.borderColor} ${service.bgColor} p-6  shadow-sm hover:shadow-md transition-shadow duration-300 bg-gradient-to-r from-purple-900 via-purple-800 to-purple-800 text-white mt-9`}
                         >
                             <div className="flex flex-col h-full">
                                 <div className="mb-4">

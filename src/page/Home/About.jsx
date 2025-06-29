@@ -18,8 +18,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-100">About Me</h2>
-          <div className="w-30 h-1 bg-primary mx-auto"></div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-600">About Me</h2>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-8 items-center">

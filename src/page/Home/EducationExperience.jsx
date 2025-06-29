@@ -9,7 +9,7 @@ const EducationExperience = () => {
 
   return (
     <section id="education-experience" className="py-16 bg-gradient-to-r from-indigo-950 via-purple-900 to-blue-900">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-100 text-center mb-15">Educational & Experience </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-500 text-center mb-15">Educational & Experience </h2>
       <div className="container px-4 max-w-5xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Education Section */}
@@ -33,10 +33,10 @@ const EducationExperience = () => {
                      <FaGraduationCap size={40} color='black' className="text-2xl mr-3 bg-gradient-to-r from-purple-500 via-purple-700 to-blue-500 p-3 rounded-md" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-100">B.A (Hons) in Islamic histoy and culture</h3>
+                      <h3 className="text-xl font-semibold text-gray-300">B.A (Hons) in Islamic histoy and culture</h3>
                       <div className="flex items-center text-gray-600 mt-1">
                         <FaMapMarkerAlt color='gray' className="mr-2 text-sm" />
-                        <span className='text-gray-100'>Feni gov't collage,Feni</span>
+                        <span className='text-gray-300'>Feni gov't collage,Feni</span>
                       </div>
                     </div>
                   </div>
@@ -66,9 +66,9 @@ const EducationExperience = () => {
                       <FaBriefcase size={40} color='black' className="text-2xl mr-3 bg-gradient-to-r from-purple-500 via-purple-700 to-blue-500 p-3 rounded-md" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-100">Learning Font-End Development </h3>
+                      <h3 className="text-xl font-semibold text-gray-300">Learning Font-End Development </h3>
                       <p className="text-gray-100">Programing hero Boot Camp</p>
-                      <div className="flex items-center text-gray-100 mt-1">
+                      <div className="flex items-center text-gray-300 mt-1">
                         <FaCalendarAlt className="mr-2 text-sm" />
                         <span>From 1st January , 2025</span>
                       </div>

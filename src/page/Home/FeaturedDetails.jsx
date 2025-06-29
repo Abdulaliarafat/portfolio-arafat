@@ -18,8 +18,8 @@ const FeaturedDetails = () => {
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Project Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{project.projectName}</h1>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">{project.description}</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-400 mb-4">{project.projectName}</h1>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">{project.description}</p>
         </div>
 
         {/* Image Carousel */}
@@ -112,7 +112,7 @@ const FeaturedDetails = () => {
             href={project.liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-indigo-900 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg"
+            className="flex items-center justify-center gap-2 px-6 py-3 text-white bg-gradient-to-r from-cyan-600 to-purple-700 hover:brightness-110 transition rounded-lg font-bold hover:bg-gray-100 text-lg"
           >
             <FaExternalLinkAlt /> Visit Live Site
           </a>
@@ -120,7 +120,7 @@ const FeaturedDetails = () => {
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white rounded-lg font-bold hover:bg-white/10 transition-colors text-lg"
+            className="flex items-center justify-center gap-2 px-6 py-3 border-2 text-white bg-gradient-to-r from-cyan-600 to-purple-700 hover:brightness-110 transition rounded-lg"
           >
             <FaGithub /> View Source Code
           </a>

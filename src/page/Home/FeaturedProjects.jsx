@@ -36,8 +36,8 @@ const FeaturedProjects = () => {
                     >
                         {/* Left Content */}
                         <div className="lg:w-1/2 text-white">
-                            <h3 className="text-2xl md:text-3xl font-bold mb-2">{project.projectName}</h3>
-                            <p className="text-white/80 mb-4">{project.description}</p>
+                            <h3 className="text-2xl md:text-3xl text-blue-500 font-bold mb-2">{project.projectName}</h3>
+                            <p className="text-gray-300 mb-4">{project.description}</p>
 
                             <div className="flex flex-wrap gap-2 mb-6">
                                 {project.techStack.map((tech, index) => (
@@ -52,7 +52,7 @@ const FeaturedProjects = () => {
                                     href={project.liveLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 px-4 py-2 bg-white text-indigo-900 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                                    className="flex items-center gap-2 px-4 py-2  bg-gradient-to-r from-cyan-600 to-purple-700 hover:brightness-110 transition rounded-lg font-medium hover:bg-gray-100 "
                                 >
                                     <FaExternalLinkAlt /> Live Site
                                 </a>
@@ -60,12 +60,12 @@ const FeaturedProjects = () => {
                                     href={project.githubLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 px-4 py-2 border border-white text-white rounded-lg font-medium hover:bg-white/10 transition-colors"
+                                    className="flex items-center gap-2 px-4 py-2 border border-white text-white rounded-lg font-medium hover:bg-white/10  bg-gradient-to-r from-cyan-600 to-purple-700 hover:brightness-110 transition"
                                 >
                                     <FaGithub /> GitHub
                                 </a>
 
-                                <Link to={`/featuredetails/${project.id}`} className="flex items-center gap-2 px-4 py-2 border border-white text-white rounded-lg font-medium hover:bg-white/10 transition-colors">View More</Link>
+                                <Link to={`/featuredetails/${project.id}`} className="flex items-center gap-2 px-4 py-2 border border-white text-white rounded-lg font-medium hover:bg-white/10  bg-gradient-to-r from-cyan-600 to-purple-700 hover:brightness-110 transition">View More</Link>
                             </div>
                         </div>
 

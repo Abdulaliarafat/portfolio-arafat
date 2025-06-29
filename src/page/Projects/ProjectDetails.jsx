@@ -7,7 +7,7 @@ const ProjectDetails = () => {
     <section className="py-12 bg-gradient-to-r from-indigo-950 via-purple-900 to-blue-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">All Projects</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-500 mb-4">All Projects</h1>
         </div>
 
         <div className="space-y-20">
@@ -15,8 +15,8 @@ const ProjectDetails = () => {
             <div key={project.id} className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
               {/* Project Header */}
               <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-white mb-2">{project.projectName}</h2>
-                <p className="text-white/80">{project.description}</p>
+                <h2 className="text-3xl font-bold text-blue-500 mb-2">{project.projectName}</h2>
+                <p className="text-gray-200">{project.description}</p>
               </div>
 
               {/* Image Grid */}
@@ -88,7 +88,7 @@ const ProjectDetails = () => {
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-5 py-2 bg-white text-indigo-900 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                  className="flex items-center gap-2 px-5 py-2 bg-white  rounded-lg font-medium text-white bg-gradient-to-r from-cyan-600 to-purple-700 hover:brightness-110 transition"
                 >
                   <FaExternalLinkAlt /> Live Demo
                 </a>
@@ -96,7 +96,7 @@ const ProjectDetails = () => {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-5 py-2 border border-white text-white rounded-lg font-medium hover:bg-white/10 transition-colors"
+                  className="flex items-center gap-2 px-5 py-2 border border-white text-white bg-gradient-to-r from-cyan-600 to-purple-700 hover:brightness-110 transition rounded-lg"
                 >
                   <FaGithub /> Source Code
                 </a>
