@@ -2,17 +2,30 @@ import { FaDownload, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router";
 import profileImg from "../../assets/IMG_20230723_112356.jpg"; // your uploaded image
 import { FaGithub } from "react-icons/fa6";
+import { motion } from 'framer-motion';
+
+const fadeIn = {
+    hidden: { opacity: 0, x: 20 },
+    visible: { opacity: 1, x: 0 },
+  };
+
 
 const Banner = () => {
     return (
         <div className="max-w-7xl flex flex-col md:flex-row items-center justify-between px-6 md:px-20 bg-gradient-to-r from-indigo-950 via-purple-900 to-blue-900 text-white">
 
             {/* Left Conte  nt */}
-            <div className="space-y-6 max-w-xl py-12">
+            <motion.div
+            initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeIn}
+          transition={{ duration: 0.6 }}
+             className="space-y-6 max-w-xl py-12">
                 <p className="text-cyan-400 font-medium">Hi, I'm Abdul Ali Arafat</p>
 
                 <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-                    <span className="text-cyan-400">MERN</span>{" "}
+                    <span className="text-cyan-400">MERN-Stack</span>{" "}
                     <span className="text-purple-400">Developer</span>
                 </h1>
 
@@ -50,10 +63,17 @@ const Banner = () => {
                         <FaGithub></FaGithub>
                     </a>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Right Image */}
-            <div className="relative mt-10 md:mt-0 flex justify-center">
+            <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeIn}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            // className="lg:w-1/2 w-full"
+            className="relative mt-10 md:mt-0 flex justify-center">
                 <div className=" lg:mr-2 rounded-full border-8 border-purple-700 p-2 shadow-xl">
                     <img
                         src={profileImg}
@@ -61,7 +81,7 @@ const Banner = () => {
                         className="w-70 h-90  object-cover rounded-full bg-yellow-400"
                     />
                 </div>
-            </div>
+            </motion.div>
 
         </div>
     );
