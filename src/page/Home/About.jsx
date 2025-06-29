@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <section className="py-16 bg-gradient-to-r from-indigo-950 via-purple-900 to-blue-900 text-white">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container max-w-5xl mx-auto px-4 bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -82,22 +82,22 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="lg:w-1/2 w-full"
           >
-            <div className="space-y-6">
-              <div className="card bg-base-200 shadow-xl p-6 bg-gradient-to-r from-indigo-400 via-purple-500 to-blue-400 text-gray-100">
-                <div className="flex flex-col items-center justify-center">
+            <div className="space-y-6 ">
+              <div className="card shadow-xl bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-gray-100">
+                <div className="flex flex-col items-center justify-center ">
                   <div className="text-4xl font-bold  mb-2 text-gray-100">MERN-Stack Developer</div>
                   <div className="text-lg font-bold opacity-80 text-gray-100">Current Focus</div>
                 </div>
               </div>
               
-              <div className="card bg-base-200 shadow-xl p-6 bg-gradient-to-r from-indigo-400 via-purple-500 to-blue-400 text-gray-100">
+              <div className="card shadow-xl bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-gray-1000">
                 <div className="flex flex-col items-center justify-center">
                   <div className="text-4xl font-bold  mb-2 text-gray-100">Back-End Development</div>
                   <div className="text-lg opacity-80 font-bold text-gray-100 ">Future goal</div>
                 </div>
               </div>
               
-              <div className="card bg-base-200 shadow-xl p-6 bg-gradient-to-r from-indigo-400 via-purple-500 to-blue-400">
+              <div className="card shadow-xl bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-gray-100">
                 <div className="flex flex-col items-center justify-center">
                   <div className="text-4xl font-bold  mb-2 text-gray-100">Sports</div>
                   <div className="text-lg opacity-80  font-bold text-gray-100">Productivity Booster</div>

@@ -2,6 +2,8 @@ import {createBrowserRouter,} from "react-router";
 import Root from "../Root/Root";
 import Error from "../SharedPage/Error";
 import Home from "../page/Home/Home";
+import FeaturedDetails from "../page/Home/FeaturedDetails";
+import ProjectDetails from "../page/Projects/ProjectDetails";
 
 export const router = createBrowserRouter([
   {
@@ -10,7 +12,16 @@ export const router = createBrowserRouter([
     errorElement:<Error></Error>,
     children:[
         {index:true,Component:Home},
-        
+        {
+          path:'/featuredetails/:id',
+          loader:()=>fetch('/project.json'),
+          Component:FeaturedDetails,
+        },
+        {
+          path:'/projectDetails',
+          loader:()=>fetch('/project.json'),
+          Component:ProjectDetails
+        }
     ]
   },
 ]);

@@ -5,121 +5,20 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router';
+import { use } from 'react';
 
 const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
 };
+const projectpromise = fetch('/project.json')
+                      .then(res => res.json())
 const FeaturedProjects = () => {
-    const projects = [
-        {
-            "id": 1,
-            "projectName": "HobbyHub",
-            "projectImages": [
-                "https://i.ibb.co/3mYds9Nd/Whats-App-Image-2025-06-29-at-08-44-58-e672f10f.jpg",
-                "https://i.ibb.co/dwvc2LDK/Whats-App-Image-2025-06-29-at-08-47-52-684a52b4.jpg",
-                "https://i.ibb.co/bgdyk0xQ/Whats-App-Image-2025-06-29-at-08-50-36-3fc49ac6.jpg",
-                "https://i.ibb.co/67rfT5XN/Whats-App-Image-2025-06-29-at-08-52-05-5ed5e4af.jpg",
-                "https://i.ibb.co/Kchy7BSz/Whats-App-Image-2025-06-29-at-08-53-13-ab82be69.jpg",
-                "https://i.ibb.co/zT5TN1rN/Whats-App-Image-2025-06-29-at-08-54-20-7255c262.jpg"
-            ],
-            "techStack": [
-                "React",
-                "Vite",
-                "Tailwind CSS",
-                "DaisyUI",
-                "Firebase",
-                "Swiper.js",
-                "React CountUp",
-                "Framer Motion"
-            ],
-            "description": "A modern, responsive front-end web application for exploring hobbies with clean UI, elegant modals, and component-based architecture.",
-            "liveLink": "https://hobbyhub-app.netlify.app",
-            "githubLink": "https://github.com/Abdulaliarafat/HobbyHub-Client.git",
-            "challenges": [
-                "Implementing smooth animations across different screen sizes",
-                "Managing state for complex modal interactions",
-                "Optimizing performance for rich visual elements"
-            ],
-            "futurePlans": [
-                "Add user authentication and personal hobby collections",
-                "Implement social sharing features",
-                "Expand hobby categories with community contributions"
-            ]
-        },
-        {
-            "id": 2,
-            "projectName": "BiteClock",
-            "projectImages": [
-                "https://i.ibb.co/jkknBJKH/Whats-App-Image-2025-06-29-at-09-05-43-88c0e9d9.jpg",
-                "https://i.ibb.co/HT1gfnPt/Whats-App-Image-2025-06-29-at-09-15-19-caf32611.jpg",
-                "https://i.ibb.co/Y4Hry1VX/Whats-App-Image-2025-06-29-at-09-15-50-04003c02.jpg",
-                "https://i.ibb.co/Nd6xrB7s/Whats-App-Image-2025-06-29-at-09-17-18-576810fa.jpg",
-                "https://i.ibb.co/Nd6xrB7s/Whats-App-Image-2025-06-29-at-09-17-18-576810fa.jpg",
-                "https://i.ibb.co/b5cG7QXY/Whats-App-Image-2025-06-29-at-09-19-44-a4b5b0a9.jpg"
-            ],
-            "techStack": [
-                "React",
-                "Vite",
-                "Tailwind CSS",
-                "DaisyUI",
-                "Firebase",
-                "Swiper.js",
-                "React CountUp",
-                "Framer Motion"
-            ],
-            "description": "A smart food expiry tracker that helps users reduce waste with alerts, food management tools, and lifestyle recommendations.",
-            "liveLink": "https://bitclock-client.netlify.app/",
-            "githubLink": "https://github.com/Abdulaliarafat/BitClock-client.git",
-            "challenges": [
-                "Implementing accurate expiry date calculations",
-                "Creating intuitive food categorization",
-                "Designing effective alert systems"
-            ],
-            "futurePlans": [
-                "Add barcode scanning for automatic food entry",
-                "Implement meal planning based on expiring items",
-                "Develop mobile app version with push notifications"
-            ]
-        },
-        {
-            "id": 3,
-            "projectName": "JobTrac",
-            "projectImages": [
-                "https://i.ibb.co/B5XQvT9f/Whats-App-Image-2025-06-29-at-09-27-10-848b71a7.jpg",
-                "https://i.ibb.co/Z6j2kP2W/Whats-App-Image-2025-06-29-at-09-30-22-ef9fdc1d.jpg",
-                "https://i.ibb.co/35hSbhZL/Whats-App-Image-2025-06-29-at-09-31-23-96cce4d8.jpg",
-                "https://i.ibb.co/HTRhr9BR/Whats-App-Image-2025-06-29-at-09-33-00-0d4178b0.jpg"
-            ],
-            "techStack": [
-                "React",
-                "Vite",
-                "Tailwind CSS",
-                "DaisyUI",
-                "Firebase",
-                "Swiper.js",
-                "React CountUp",
-                "Framer Motion"
-            ],
-            "description": "A job tracking application with secure authentication, protected routes, and tools for managing job applications effectively.",
-            "liveLink": "https://jobtrack-app.netlify.app/",
-            "githubLink": "https://github.com/Abdulaliarafat/JobTrack-app",
-            "challenges": [
-                "Implementing secure authentication flows",
-                "Creating responsive data tables for job listings",
-                "Optimizing performance for large job application datasets"
-            ],
-            "futurePlans": [
-                "Add resume parsing functionality",
-                "Implement company research integration",
-                "Develop interview preparation tools"
-            ]
-        }
-    ];
-
+    const projects = use(projectpromise)
     return (
         <section className="py-16 bg-gradient-to-r from-indigo-950 via-purple-900 to-blue-900">
-            <div className="container mx-auto px-4 max-w-5xl">
+            <div className="container mx-auto px-4 max-w-6xl">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-blue-500 mb-b">Featured Projects</h2>
                 </div>
@@ -165,6 +64,8 @@ const FeaturedProjects = () => {
                                 >
                                     <FaGithub /> GitHub
                                 </a>
+
+                                <Link to={`/featuredetails/${project.id}`} className="flex items-center gap-2 px-4 py-2 border border-white text-white rounded-lg font-medium hover:bg-white/10 transition-colors">View More</Link>
                             </div>
                         </div>
 
@@ -180,7 +81,7 @@ const FeaturedProjects = () => {
                                 pagination={{
                                     clickable: true,
                                 }}
-                                modules={[Autoplay, Pagination,Navigation]}
+                                modules={[Autoplay, Pagination, Navigation]}
                                 navigation={true}
 
                                 className="rounded-xl overflow-hidden"
