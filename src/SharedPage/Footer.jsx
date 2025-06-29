@@ -71,20 +71,18 @@ const Footer = () => {
               <FaTwitter className="text-xl" />
             </a>
           </div>
-
-          {/* Back to Top */}
-          <button 
-            onClick={scrollToTop}
-            className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
-          >
-            <FaArrowUp />
-            <span>Back to Top</span>
-          </button>
-
           {/* Copyright */}
           <div className="text-gray-400 text-sm mt-4 md:mt-0">
             © 2025 Abdul Ali Arafat. Made with <span className="text-red-400">❤️</span> All rights reserved.
           </div>
+          {/* Back to Top */}
+          <button 
+            onClick={scrollToTop}
+            className="flex p-3 rounded-lg  border-1 border-blue-600 items-center gap-2 text-gray-100  bg-gradient-to-r from-indigo-700 via-purple-700 to-blue-700 hover:border-2"
+          >
+            <FaArrowUp />
+            <span>Back to Top</span>
+          </button>
         </div>
       </div>
     </footer>

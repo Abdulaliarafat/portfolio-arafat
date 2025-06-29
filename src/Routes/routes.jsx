@@ -29,7 +29,8 @@ export const router = createBrowserRouter([
         },
         {
           path:'detailsContact',
-          Component:DetailsContact
+          HydrateFallback:Loading,
+           Component:DetailsContact,
         }
     ]
   },

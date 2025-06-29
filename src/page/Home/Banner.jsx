@@ -1,6 +1,6 @@
 import { FaDownload, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router";
-import profileImg from "../../assets/IMG_20230723_112356.jpg"; // your uploaded image
+import profileImg from "../../assets/WhatsApp Image .jpg"; // your uploaded image
 import { FaGithub } from "react-icons/fa6";
 import { motion } from 'framer-motion';
 
@@ -52,13 +52,13 @@ const Banner = () => {
 
                 {/* Social Icons */}
                 <div className="flex gap-4 mt-6">
-                    <a href="#" className="p-2 border rounded-md hover:bg-gray-800 transition">
+                    <a href="https://www.facebook.com/dreamlessarafat.ii/" className="p-2 border rounded-md hover:bg-gray-800 transition">
                         <FaFacebook></FaFacebook>
                     </a>
-                    <a href="#" className="p-2 border rounded-md hover:bg-gray-800 transition">
+                    <a href="https://www.linkedin.com/in/ara-fat-021531362/" className="p-2 border rounded-md hover:bg-gray-800 transition">
                         <FaLinkedin></FaLinkedin>
                     </a>
-                    <a href="#" className="p-2 border rounded-md
+                    <a href="https://github.com/Abdulaliarafat" className="p-2 border rounded-md
            hover:bg-gray-800 transition">
                         <FaGithub></FaGithub>
                     </a>

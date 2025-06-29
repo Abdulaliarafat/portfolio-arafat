@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaBars, FaTimes, FaDownload } from 'react-icons/fa';
-import img from '../../src/assets/360_F_522731613_IlCaTacebI1wtIcmJO0SM05USuWOxJE7.jpg';
+import img from '../../src/assets/download.png';
 import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
@@ -49,8 +49,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold flex items-center md:ml-10 gap-2">
-          <img src={img} className="rounded-full w-10" alt="Logo" />
-          <p className="font-semibold text-md">Arafat</p>
+          <img src={img} className="rounded-full w-12 shadow-2xl border-1 border-blue-600 hover:border-2" alt="Logo" />
+          <p className="font-bold text-blue-300 text-2xl">Abdul ali arafat</p>
         </Link>
 
         {/* Desktop Menu */}
