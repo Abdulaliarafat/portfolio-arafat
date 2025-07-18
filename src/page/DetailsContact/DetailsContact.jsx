@@ -8,7 +8,7 @@ const DetailsContact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-r from-indigo-950 via-purple-900 to-blue-900">
+    <section id="contact" className="md:py-20 bg-gradient-to-r from-indigo-950 via-purple-900 to-blue-900">
       <div className="container mx-auto px-4">
         <motion.div
           initial="hidden"
@@ -148,7 +148,7 @@ const DetailsContact = () => {
                 </h3>
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="https://www.linkedin.com/in/ara-fat-021531362/"
+                    href="https://www.linkedin.com/in/abdulaliarafat/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"

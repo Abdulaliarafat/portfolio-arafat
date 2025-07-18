@@ -6,7 +6,6 @@ import SkillsTechnologies from './SkillsTechnologies';
 import EducationExperience from './EducationExperience';
 import FeaturedProjects from './FeaturedProjects';
 import Contact from './Contact';
-import Footer from '../../SharedPage/Footer';
 import Loading from '../../SharedPage/Loading';
 
 
@@ -21,7 +20,6 @@ const Home = () => {
                 <EducationExperience></EducationExperience>
                 <FeaturedProjects></FeaturedProjects>
                 <Contact></Contact>
-                <Footer></Footer>
             </Suspense>
         </div>
     );

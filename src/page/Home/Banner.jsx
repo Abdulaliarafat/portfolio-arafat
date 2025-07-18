@@ -22,10 +22,10 @@ const Banner = () => {
           variants={fadeIn}
           transition={{ duration: 0.6 }}
              className="space-y-6 max-w-xl py-12">
-                <p className="text-cyan-400 font-medium">Hi, I'm Abdul Ali Arafat</p>
+                <p className="text-cyan-300 font-medium">Hi, I'm Abdul Ali Arafat</p>
 
                 <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-                    <span className="text-cyan-400">MERN-Stack</span>{" "}
+                    <span className="text-cyan-400">Frontend </span>{" "}
                     <span className="text-purple-400">Developer</span>
                 </h1>
 
@@ -36,7 +36,7 @@ const Banner = () => {
                 {/* Buttons */}
                 <div className="flex flex-wrap items-center gap-4">
                     <a
-                        href="/resume.pdf"
+                        href="/Abdul ali arafat.(Resume).pdf"
                         download
                         className="flex items-center gap-2 px-5 py-2 rounded-md bg-gradient-to-r from-cyan-500 to-purple-500 hover:brightness-110 font-medium"
                     >
@@ -55,7 +55,7 @@ const Banner = () => {
                     <a href="https://www.facebook.com/dreamlessarafat.ii/" className="p-2 border rounded-md hover:bg-gray-800 transition">
                         <FaFacebook></FaFacebook>
                     </a>
-                    <a href="https://www.linkedin.com/in/ara-fat-021531362/" className="p-2 border rounded-md hover:bg-gray-800 transition">
+                    <a href="https://www.linkedin.com/in/abdulaliarafat/" className="p-2 border rounded-md hover:bg-gray-800 transition">
                         <FaLinkedin></FaLinkedin>
                     </a>
                     <a href="https://github.com/Abdulaliarafat" className="p-2 border rounded-md

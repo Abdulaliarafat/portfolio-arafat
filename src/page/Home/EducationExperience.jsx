@@ -33,10 +33,10 @@ const EducationExperience = () => {
                      <FaGraduationCap size={40} color='black' className="text-2xl mr-3 bg-gradient-to-r from-purple-500 via-purple-700 to-blue-500 p-3 rounded-md" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-300">B.A (Hons) in Islamic histoy and culture</h3>
+                      <h3 className="text-xl font-semibold text-gray-300">B.A (Hons) in Islamic history and culture</h3>
                       <div className="flex items-center text-gray-600 mt-1">
                         <FaMapMarkerAlt color='gray' className="mr-2 text-sm" />
-                        <span className='text-gray-300'>Feni gov't collage,Feni</span>
+                        <span className='text-gray-300'>National university</span>
                       </div>
                     </div>
                   </div>
@@ -66,11 +66,11 @@ const EducationExperience = () => {
                       <FaBriefcase size={40} color='black' className="text-2xl mr-3 bg-gradient-to-r from-purple-500 via-purple-700 to-blue-500 p-3 rounded-md" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-300">Learning Font-End Development </h3>
-                      <p className="text-gray-100">Programing hero Boot Camp</p>
+                      <h3 className="text-xl font-semibold text-gray-300">No work experience</h3>
+                      <p className="text-gray-100"></p>
                       <div className="flex items-center text-gray-300 mt-1">
-                        <FaCalendarAlt className="mr-2 text-sm" />
-                        <span>From 1st January , 2025</span>
+                        {/* <FaCalendarAlt className="mr-2 text-sm" /> */}
+                        <span></span>
                       </div>
                     </div>
                   </div>

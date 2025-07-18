@@ -32,11 +32,11 @@ const About = () => {
           >
             <div className="prose max-w-none">
               <p className="text-lg mb-6">
-                I'm <strong className="text-primary">Abdul Ali Arafat</strong>, a passionate Full-Stack MERN Developer from <span className="text-secondary">Sylhet, Bangladesh</span>. My journey in tech began when intermediate ICT subjects captivated me, and later my younger brother encouraged me to dive deeper into web development.
+                I'm <strong className="text-blue-500">Abdul Ali Arafat</strong>, a passionate Frontend Developer from <span className="text-secondary">Sylhet, Bangladesh</span>. My journey in tech began when intermediate ICT subjects captivated me, and later my younger brother encouraged me to dive deeper into web development.
               </p>
               
               <div className="mb-6">
-                <h3 className="text-xl font-semibold mb-3 text-primary">Tech Focus</h3>
+                <h3 className="text-xl font-semibold mb-3 text-blue-500">Tech Focus</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-secondary text-xl mt-0.5"><FaGraduationCap /></span>
@@ -54,7 +54,7 @@ const About = () => {
               </div>
 
               <div className="mb-6">
-                <h3 className="text-xl font-semibold mb-3 text-primary">Beyond Coding</h3>
+                <h3 className="text-xl font-semibold mb-3 text-blue-500">Beyond Coding</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-warning text-xl mt-0.5"><FaRunning /></span>
@@ -84,14 +84,14 @@ const About = () => {
             <div className="space-y-6 ">
               <div className="card shadow-xl bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-gray-100">
                 <div className="flex flex-col items-center justify-center ">
-                  <div className="text-4xl font-bold  mb-2 text-gray-100">MERN-Stack Developer</div>
+                  <div className="text-4xl font-bold  mb-2 text-gray-100">Frontend Developer</div>
                   <div className="text-lg font-bold opacity-80 text-gray-100">Current Focus</div>
                 </div>
               </div>
               
               <div className="card shadow-xl bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-gray-1000">
                 <div className="flex flex-col items-center justify-center">
-                  <div className="text-4xl font-bold  mb-2 text-gray-100">Back-End Development</div>
+                  <div className="text-4xl font-bold  mb-2 text-gray-100">Full-Stack Development</div>
                   <div className="text-lg opacity-80 font-bold text-gray-100 ">Future goal</div>
                 </div>
               </div>

@@ -1,11 +1,7 @@
 import { motion } from 'framer-motion';
-import {
-    FaJs, FaReact, FaDatabase, FaNodeJs,
-    FaHtml5, FaCss3Alt, FaGitAlt, FaPhp,
-    FaFire, FaFigma, FaWordpress,
-    FaGithub
-} from 'react-icons/fa';
-import { SiExpress, SiTailwindcss, SiBootstrap, SiMongodb, SiPostman, SiAdobephotoshop } from 'react-icons/si';
+import { FaJs, FaReact, FaFire, FaHtml5, FaCss3Alt, FaNodeJs, FaDatabase, FaFigma, FaGithub } from "react-icons/fa";
+import { SiMongodb, SiExpress, SiTailwindcss, SiFramer, SiSwiper, SiReactrouter, SiVercel, SiNetlify } from "react-icons/si";
+
 
 const SkillsTechnologies = () => {
     const fadeIn = {
@@ -14,20 +10,25 @@ const SkillsTechnologies = () => {
     };
 
     const skills = [
-        { name: "JavaScript", icon: <FaJs className="text-xl" />, color: "text-gray-100", bg: "bg-purple-50" },
-        { name: "React", icon: <FaReact className="text-xl" />, color: "text-blue-200", bg: "bg-blue-50" },
-        { name: "MongoDB", icon: <SiMongodb className="text-xl" />, color: "text-green-200", bg: "bg-green-50" },
-        { name: "Express", icon: <SiExpress className="text-xl" />, color: "text-gray-200", bg: "bg-gray-100" },
-        { name: "Firebase", icon: <FaFire className="text-xl" />, color: "text-orange-600", bg: "bg-orange-50" },
-        { name: "HTML5", icon: <FaHtml5 className="text-xl" />, color: "text-orange-300", bg: "bg-orange-50" },
-        { name: "CSS3", icon: <FaCss3Alt className="text-xl" />, color: "text-blue-300", bg: "bg-blue-50" },
-        { name: "Tailwind", icon: <SiTailwindcss className="text-xl" />, color: "text-cyan-400", bg: "bg-cyan-50" },
-        { name: "Bootstrap", icon: <SiBootstrap className="text-xl" />, color: "text-purple-900", bg: "bg-purple-50" },
-        { name: "Git", icon: <FaGithub className="text-xl" />, color: "text-gray-800", bg: "bg-purple-500" },
-        { name: "NoSQL", icon: <FaDatabase className="text-xl" />, color: "text-blue-200", bg: "bg-blue-50" },
-        { name: "Node.js", icon: <FaNodeJs className="text-xl" />, color: "text-green-300", bg: "bg-green-50" },
-        { name: "Figma", icon: <FaFigma className="text-xl" />, color: "text-purple-300", bg: "bg-purple-50" },
-    ];
+  { name: "JavaScript", icon: <FaJs className="text-xl" />, color: "text-gray-100", bg: "bg-purple-50" },
+  { name: "React", icon: <FaReact className="text-xl" />, color: "text-blue-200", bg: "bg-blue-50" },
+  { name: "React Router", icon: <SiReactrouter size={20} className="text-xl" />, color: "text-pink-400", bg: "bg-pink-50" },
+  { name: "Framer Motion", icon: <SiFramer className="text-xl" />, color: "text-pink-400", bg: "bg-pink-50" },
+  { name: "MongoDB", icon: <SiMongodb className="text-xl" />, color: "text-green-200", bg: "bg-green-50" },
+  { name: "Express", icon: <SiExpress className="text-xl" />, color: "text-gray-200", bg: "bg-gray-100" },
+  { name: "Firebase", icon: <FaFire className="text-xl" />, color: "text-orange-600", bg: "bg-orange-50" },
+  { name: "HTML5", icon: <FaHtml5 className="text-xl" />, color: "text-orange-300", bg: "bg-orange-50" },
+  { name: "CSS3", icon: <FaCss3Alt className="text-xl" />, color: "text-blue-300", bg: "bg-blue-50" },
+  { name: "Tailwind", icon: <SiTailwindcss className="text-xl" />, color: "text-cyan-400", bg: "bg-cyan-50" },
+  { name: "Swiper.js", icon: <SiSwiper className="text-xl" />, color: "text-blue-400", bg: "bg-blue-50" },
+  { name: "Node.js", icon: <FaNodeJs className="text-xl" />, color: "text-green-300", bg: "bg-green-50" },
+  { name: "NoSQL", icon: <FaDatabase className="text-xl" />, color: "text-blue-200", bg: "bg-blue-50" },
+  { name: "Figma", icon: <FaFigma className="text-xl" />, color: "text-purple-300", bg: "bg-purple-50" },
+  { name: "GitHub", icon: <FaGithub  className="text-xl" />, color: "text-gray-200", bg: "bg-gray-100" },
+  { name: "Vercel", icon: <SiVercel className="text-xl" />, color: "text-black", bg: "bg-gray-50" },
+  { name: "Netlify", icon: <SiNetlify className="text-xl" />, color: "text-cyan-300", bg: "bg-cyan-50" },
+]
+
 
     return (
         <section id="skills" className=" py-16 bg-gradient-to-r from-indigo-950 via-purple-900 to-blue-900  ">
@@ -50,7 +51,7 @@ const SkillsTechnologies = () => {
                     viewport={{ once: true }}
                     variants={fadeIn}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 mb-5"
+                    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 mb-5"
                 >
                     {skills.map((skill, index) => (
                         <motion.div
