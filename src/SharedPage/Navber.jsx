@@ -3,6 +3,7 @@ import { FaBars, FaTimes, FaDownload } from 'react-icons/fa';
 import img from '../../src/assets/download.png';
 import { Link, NavLink } from 'react-router';
 import resume from '/Abdul ali arafat.(Resume).pdf'
+import Swal from 'sweetalert2';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,6 +61,20 @@ const Navbar = () => {
           <a
             href="/Abdul ali arafat.(Resume).pdf"
             download
+            onClick={() =>
+              Swal.fire({
+                title: 'Download Resume',
+                background: '#6b21a8',  // Tailwind purple-700
+                color: 'white',
+                icon: 'success',
+                showConfirmButton: false,
+                timer: 1500,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.style.borderRadius = '12px'; // optional rounded corners
+                }
+              })
+            }
             className="flex items-center gap-2 px-4 py-2 rounded-md text-white font-medium bg-gradient-to-r from-cyan-600 to-purple-700 hover:brightness-110 transition"
           >
             <FaDownload /> Resume

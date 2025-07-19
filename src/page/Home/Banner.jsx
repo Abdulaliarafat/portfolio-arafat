@@ -4,11 +4,12 @@ import profileImg from "../../assets/WhatsApp Image .jpg"; // your uploaded imag
 import { FaGithub } from "react-icons/fa6";
 import { motion } from 'framer-motion';
 import resume from '/Abdul ali arafat.(Resume).pdf'
+import Swal from "sweetalert2";
 
 const fadeIn = {
     hidden: { opacity: 0, x: 20 },
     visible: { opacity: 1, x: 0 },
-  };
+};
 
 
 const Banner = () => {
@@ -17,12 +18,12 @@ const Banner = () => {
 
             {/* Left Conte  nt */}
             <motion.div
-            initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeIn}
-          transition={{ duration: 0.6 }}
-             className="space-y-6 max-w-xl py-12">
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
+                transition={{ duration: 0.6 }}
+                className="space-y-6 max-w-xl py-12">
                 <p className="text-cyan-300 font-medium">Hi, I'm Abdul Ali Arafat</p>
 
                 <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
@@ -39,6 +40,20 @@ const Banner = () => {
                     <a
                         href={resume}
                         download
+                        onClick={() =>
+                            Swal.fire({
+                                title: 'Download Resume',
+                                background: '#6b21a8',  // Tailwind purple-700
+                                color: 'white',
+                                icon: 'success',
+                                showConfirmButton: false,
+                                timer: 1500,
+                                timerProgressBar: true,
+                                didOpen: (toast) => {
+                                    toast.style.borderRadius = '12px'; // optional rounded corners
+                                }
+                            })
+                        }
                         className="flex items-center gap-2 px-5 py-2 rounded-md bg-gradient-to-r from-cyan-500 to-purple-500 hover:brightness-110 font-medium"
                     >
                         <FaDownload /> Download Resume
@@ -68,13 +83,13 @@ const Banner = () => {
 
             {/* Right Image */}
             <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            // className="lg:w-1/2 w-full"
-            className="relative mt-10 md:mt-0 flex justify-center">
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                // className="lg:w-1/2 w-full"
+                className="relative mt-10 md:mt-0 flex justify-center">
                 <div className=" lg:mr-2 rounded-full border-8 border-purple-700 p-2 shadow-xl">
                     <img
                         src={profileImg}
