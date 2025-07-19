@@ -59,7 +59,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6 items-center">
           {navItems}
           <a
-            href="/Abdul ali arafat.(Resume).pdf"
+            href={resume}
             download
             onClick={() =>
               Swal.fire({
@@ -99,6 +99,20 @@ const Navbar = () => {
           <a
             href={resume}
             download
+            onClick={() =>
+              Swal.fire({
+                title: 'Download Resume',
+                background: '#6b21a8',  // Tailwind purple-700
+                color: 'white',
+                icon: 'success',
+                showConfirmButton: false,
+                timer: 1700,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.style.borderRadius = '12px'; // optional rounded corners
+                }
+              })
+            }
             className="flex items-center btn gap-3 px-4 py-2 rounded-md text-white  font-medium bg-gradient-to-r from-cyan-600 to-purple-700 hover:brightness-110 transition"
           >
             <FaDownload /> Resume
