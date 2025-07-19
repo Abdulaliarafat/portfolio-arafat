@@ -81,7 +81,7 @@ const Navbar = () => {
         <div className="md:hidden px-4 py-3 pb-4 bg-gradient-to-r from-indigo-950 via-purple-900 to-blue-900 text-white  space-y-2 sticky">
           {navItems}
           <a
-            href="/resume.pdf"
+            href="../assets/Abdul ali arafat.(Resume).pdf"
             download
             className="flex items-center btn gap-3 px-4 py-2 rounded-md text-white  font-medium bg-gradient-to-r from-cyan-600 to-purple-700 hover:brightness-110 transition"
           >

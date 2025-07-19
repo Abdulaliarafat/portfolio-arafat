@@ -36,7 +36,7 @@ const Banner = () => {
                 {/* Buttons */}
                 <div className="flex flex-wrap items-center gap-4">
                     <a
-                        href="/Abdul ali arafat.(Resume).pdf"
+                        href="../../assets/Abdul ali arafat.(Resume).pdf"
                         download
                         className="flex items-center gap-2 px-5 py-2 rounded-md bg-gradient-to-r from-cyan-500 to-purple-500 hover:brightness-110 font-medium"
                     >
