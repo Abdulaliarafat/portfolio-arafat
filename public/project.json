@@ -3,10 +3,19 @@
         "id": 1,
         "projectName": "Goal",
         "projectImages": [
-            "https://i.ibb.co/HC3L6hn/goal-club.jpg",
-            "https://i.ibb.co/0VBh0pM/goal-courts.jpg",
-            "https://i.ibb.co/k8YrjFp/goal-dashboard.jpg",
-            "https://i.ibb.co/jJ4QZ8d/goal-payment.jpg"
+            "https://i.ibb.co/39kN4Mtq/Whats-App-Image-1.jpg",
+            "https://i.ibb.co/DDdP2qzJ/Whats-App-Image-2.jpg",
+            "https://i.ibb.co/NfPqH7X/Whats-App-Image-3.jpg",
+            "https://i.ibb.co/xqJyqKMH/Whats-App-Image-4.jpg",
+            "https://i.ibb.co/xq2Kq0bW/Whats-App-Image-6.jpg",
+            "https://i.ibb.co/rfKhQx3b/Whats-App-Image-7.jpg",
+            "https://i.ibb.co/8Lq8p49d/Whats-App-Image-8.jpg",
+            "https://i.ibb.co/z1w53hV/Whats-App-Image-2025-07-18-at-22-06-55-36369bb3.jpg",
+            "https://i.ibb.co/sJpsC7MQ/Whats-App-Image-2025-07-18-at-21-54-25-e2d16b1a.jpg",
+            "https://i.ibb.co/HTZV07pr/Whats-App-Image-2025-07-18-at-22-09-34-cf20cd02.jpg",
+            "https://i.ibb.co/39K7LW1r/Whats-App-Image-2025-07-18-at-21-55-30-7e5e43f2.jpg",
+            "https://i.ibb.co/VYvHPfYd/Whats-App-Image-2025-07-18-at-22-11-37-a79a2bec.jpg"
+           
         ],
         "techStack": [
             "React",
@@ -35,7 +44,7 @@
         ],
         "futurePlans": [
             "Add real-time chat between members and admins",
-            "Implement a mobile app version with React Native",
+            "Implement a mobile app version",
             "Add calendar sync for bookings",
             "Enable automated reminders and notifications",
             "Expand court types and add multi-location support"
