@@ -68,7 +68,7 @@ const Navbar = () => {
                 color: 'white',
                 icon: 'success',
                 showConfirmButton: false,
-                timer: 1500,
+                timer: 1700,
                 timerProgressBar: true,
                 didOpen: (toast) => {
                   toast.style.borderRadius = '12px'; // optional rounded corners

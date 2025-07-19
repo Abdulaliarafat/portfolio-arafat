@@ -47,7 +47,7 @@ const Banner = () => {
                                 color: 'white',
                                 icon: 'success',
                                 showConfirmButton: false,
-                                timer: 1500,
+                                timer: 1800,
                                 timerProgressBar: true,
                                 didOpen: (toast) => {
                                     toast.style.borderRadius = '12px'; // optional rounded corners
