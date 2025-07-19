@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import profileImg from "../../assets/WhatsApp Image .jpg"; // your uploaded image
 import { FaGithub } from "react-icons/fa6";
 import { motion } from 'framer-motion';
+import resume from '/Abdul ali arafat.(Resume).pdf'
 
 const fadeIn = {
     hidden: { opacity: 0, x: 20 },
@@ -36,7 +37,7 @@ const Banner = () => {
                 {/* Buttons */}
                 <div className="flex flex-wrap items-center gap-4">
                     <a
-                        href="../../assets/Abdul ali arafat.(Resume).pdf"
+                        href={resume}
                         download
                         className="flex items-center gap-2 px-5 py-2 rounded-md bg-gradient-to-r from-cyan-500 to-purple-500 hover:brightness-110 font-medium"
                     >
