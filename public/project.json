@@ -33,8 +33,8 @@
             "TanStack Query"
         ],
         "description": "A comprehensive indoor sports club management system featuring court bookings, user roles, payment integration, and an admin dashboard for smooth club operations.",
-        "liveLink": "https://assignment-12-clinet.netlify.app/",
-        "githubLink": "https://github.com/Programming-Hero-Web-Course4/b11a12-client-side-Abdulaliarafat",
+        "liveLink": "https://goal-sports-booking.netlify.app/",
+        "githubLink": "https://github.com/Abdulaliarafat/Goal-sports-client",
         "challenges": [
             "Implementing secure role-based authentication with Firebase",
             "Managing booking approvals with real-time status updates",
